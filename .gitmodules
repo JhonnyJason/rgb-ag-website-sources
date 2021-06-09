@@ -1,0 +1,6 @@
+[submodule "source/messageboxmodule"]
+	path = source/messageboxmodule
+	url = git@github.com:JhonnyJason/pwa-sources-messageboxmodule.git
+[submodule "source/vanillautilmodule"]
+	path = source/vanillautilmodule
+	url = git@github.com:JhonnyJason/pwa-sources-vanillautilmodule.git

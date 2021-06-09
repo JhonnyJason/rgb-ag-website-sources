@@ -4,11 +4,26 @@ domconnect.initialize()
 
 global.allModules = Modules
 
+v = Modules.vanillautilmodule
+    
 ############################################################
 appStartup = ->
     ## which modules shall be kickstarted?
     # Modules.appcoremodule.startUp()
+    projectMenuLink.addEventListener("click", projectMenuClicked)
+    contactMenuLink.addEventListener("click", contactMenuClicked)
     return
+
+projectMenuClicked = ->
+    console.log "projectMenuClicked"
+    v.scrollTo(projectpage)
+    return
+
+contactMenuClicked = ->
+    console.log "contactMenuClicked"
+    v.scrollTo(contactpage)
+    return
+
 
 ############################################################
 run = ->

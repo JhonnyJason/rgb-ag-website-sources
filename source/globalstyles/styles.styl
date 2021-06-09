@@ -1,9 +1,21 @@
 // globalstyles styles
+/*==========================================================
+Global variables and styles
+==========================================================*/
+max-content-width = 950px
+inner-content-width = 750px
+mobile-side-padding = 28px
+
+/*==========================================================
+function to be able to introduce brackets
+==========================================================*/
+tag(tagname)
+    unquote("[") + tagname + unquote("]")
 
 /*==========================================================
 Color Theme
 ==========================================================*/
-cd-foreground = white
+cd-foreground = #3D3D3D
 cd-flash = purple
 cd-background = black
 
@@ -20,16 +32,41 @@ General Tag Styles
 body
     background-color cd-background
     color cd-foreground
-    font-family: Arial, Helvetica, sans-serif
-    text-align: center
-    font-size: 12pt
-    height 100vh
+    font-family: 'Roboto', sans-serif;
+    font-weight 200
+    font-size: 14pt
+    // height 100vh
+    width 100%
+    overflow-x hidden
+    overflow-y: auto
+h1
+    font-size: 36pt
+h2
+    font-size: 28pt
+h4
+    font-size: 17pt
+p
+    font-size: 14pt
+
+/*==========================================================
+Global Class Styles
+==========================================================*/
+.inner-content
+    margin auto
+    max-width: inner-content-width
+    padding-left: mobile-side-padding
+    padding-right: mobile-side-padding
+
+.max-content
+    margin auto
+    max-width: max-content-width
+    padding-left: mobile-side-padding
+    padding-right: mobile-side-padding    
+
+.page
+    position relative
+    box-sizing: border-box
+    min-height: 100vh
     width 100%
     overflow hidden
-
-h1
-    font-size: 17pt
-h2
-    font-size: 15pt
-p
-    font-size: 12pt
+    padding-bottom 260px

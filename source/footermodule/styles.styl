@@ -1,0 +1,23 @@
+// footer styles
+footer-text-height-ratio = 0.02698
+footer-text-height = (100vw * footer-text-height-ratio)
+
+#footer
+    position absolute
+    width 100%
+    bottom 20px
+    p
+        font-size footer-text-height
+
+#footer-icon
+    background-color white
+    border-radius 50%
+    margin auto
+    width 51pt
+    height 51pt
+    margin-bottom 10px
+
+@media screen and (min-width: 414px)
+    #footer
+        p
+            font-size 12px
